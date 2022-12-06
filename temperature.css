@@ -1,3 +1,8 @@
+body {
+    background-image: url('joe-woods-4Zaq5xY5M_c-unsplash.jpg');
+    /* image: Joe Woods - Unsplash*/
+}
+
 .main-container {
   display: flex;
   flex-direction: column;
@@ -13,7 +18,7 @@ label {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: lightblue;
+  background-color: lightcyan;
   border-radius: 10px;
   width: 40vw;
   height: 5vw;
