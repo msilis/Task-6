@@ -1,14 +1,30 @@
 .main-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-right: 5px;
 }
 
 .card-container {
-    background-color: beige;
-    border-radius: 10px;
-    width: 40vw;
-    height: 5vw;
-    margin: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: lightblue;
+  border-radius: 10px;
+  width: 40vw;
+  height: 5vw;
+  margin: 10px;
+  box-shadow: 5px 5px 5px black;
 }
 
+.button {
+  margin: 5px;
+}
+
+.temp-result {
+  display: inline-block;
+}
