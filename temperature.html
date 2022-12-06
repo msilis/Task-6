@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="temperature.css">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="header">
+            <h1>Temperature Converter</h1>
+        </div>
+        <div class="temp-picker card-container">
+            <label>What is the temperature you are converting from?</label>
+            <select name="temperature-picker" id="temperature-picker">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="convert-picker card-container">
+            <label>What is the temperature you are converting to?</label>
+            <select name="convert-temp-picker" id="convert-temp-picker">
+                <option value="celsius">Celsius</option>
+                <option value="fahrenheit">Fahrenheit</option>
+                <option value="kelvin">Kelvin</option>
+            </select>
+        </div>
+        <div class="temp-input card-container">
+            <label for="temp-input-box">What is the temperature?</label>
+            <input type="text" id="temp-input-box">
+        </div>
+        <div class="button">
+            <button type="submit" id="convert-button">Convert!</button>
+        </div>
+        <div class="temp-result card-container">
+            <h3 class="result-text">Your converted temperature is:</h3>
+            <h4 class="temp-result"></h4>
+
+        </div>
+
+    </div>
+    <script type="text/javascript" src="temperature.js"></script>
+</body>
+</html>
