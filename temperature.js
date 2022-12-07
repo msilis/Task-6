@@ -11,7 +11,7 @@ function clickHandler() {
   const celsiusToFahrenheit = inputTemp * (9 / 5) + 32;
   const celsiusToKelvin = Number(inputTemp) + 273.15;
   const fahrenheitToCelsius = (Number(inputTemp) - 32) * (5 / 9);
-  const fahrenheitToKelvin = Number(inputTemp) + 459.67 * (5 / 9);
+  const fahrenheitToKelvin = (Number(inputTemp) + 459.67) * (5 / 9);
   const kelvinToCelsius = Number(inputTemp) - 273.15;
   const kelvinToFahrenheit = Number(inputTemp) * (9 / 5) - 459.67;
 
@@ -26,7 +26,7 @@ function clickHandler() {
     console.log((Number(inputTemp) - 32) * (5 / 9));
     document.getElementById("temp-result").innerHTML = ` ${resultText} is ${fahrenheitToCelsius.toFixed(2)}\u00B0${convertTemp}`;
   } else if (initialTemp == "F" && convertTemp == "K") {
-    console.log(Number(inputTemp) + 459.67 * (5 / 9));
+    console.log((Number(inputTemp) + 459.67) * (5/9));
     document.getElementById("temp-result").innerHTML = ` ${resultText} is ${fahrenheitToKelvin.toFixed(2)}\u00B0${convertTemp}`;
   } else if (initialTemp == "K" && convertTemp == "C") {
     console.log(Number(inputTemp) - 273.15);
